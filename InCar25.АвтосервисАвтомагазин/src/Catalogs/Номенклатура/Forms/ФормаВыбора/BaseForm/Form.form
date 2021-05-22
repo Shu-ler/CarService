@@ -3488,9 +3488,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>false</horizontalStretch>
-                <textColor xsi:type="core:ColorRef">
-                  <color>Style.ЦветГиперссылки</color>
-                </textColor>
+                <textColor xsi:type="core:ColorDef"/>
               </extInfo>
             </items>
             <autoCommandBar>

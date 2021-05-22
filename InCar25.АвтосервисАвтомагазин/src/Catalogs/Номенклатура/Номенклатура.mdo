@@ -111,19 +111,6 @@
     </extension>
     <type/>
   </attributes>
-  <attributes uuid="56f0b8de-780d-4c4f-80b0-9b3037412804">
-    <name>СтавкаНДС</name>
-    <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
-      <typeExtension>
-        <types>
-          <state>Checked</state>
-          <type>EnumRef.СтавкиНДС</type>
-        </types>
-      </typeExtension>
-    </extension>
-    <type/>
-  </attributes>
   <attributes uuid="799b298e-1454-41aa-83b6-81a9a7f9629a">
     <name>НаименованиеПолное</name>
     <objectBelonging>Adopted</objectBelonging>
