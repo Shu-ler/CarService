@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e1cf7b6-8d76-465b-8015-db18dea223d5">
+  <producedTypes>
+    <selectionType typeId="59b81724-338b-4a90-a50e-f51397982dc3" valueTypeId="cbfa2465-e835-4288-86f3-263fa847f859"/>
+    <listType typeId="1cfe3c48-c805-4b8c-94a3-e4df7233230a" valueTypeId="81f3bdcb-57e6-44eb-9fd5-6ba20bb9f7ba"/>
+    <managerType typeId="63afe402-6ba7-4b13-b802-bbb0e1e479ed" valueTypeId="1320a495-55cf-4a59-85c8-0d0372e4795b"/>
+    <recordSetType typeId="6fdf139e-f71b-44f2-9c9e-eff63d50da70" valueTypeId="5df1971c-f2e8-48ed-9550-4fe5e15ee05f"/>
+    <recordKeyType typeId="5967b145-4669-4d67-946e-821b94e6835b" valueTypeId="dee829c8-ebdf-48b4-8786-09ed45f1ecdb"/>
+    <recordType typeId="9a5c58bb-a7b5-438e-a0d2-2c657a1e319c" valueTypeId="05a300f4-60ef-4406-9b26-9672bc42270d"/>
+    <recordManagerType typeId="e58f1c9b-ccb6-4a1d-8ad6-b823cb76ceb2" valueTypeId="c6c1ea72-2d49-4bee-b04b-41f6d06eff93"/>
+  </producedTypes>
+  <name>АС2_АвтомобилиКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Автосервис) Автомобили клиентов</value>
+  </synonym>
+  <comment>Регистрационный знак и владелец автомобиля</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.АС2_АвтомобилиКлиентов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата изменения регистрационных </value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Автомобиль клиента</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>История изменений регистрационных данных</value>
+  </listPresentation>
+  <resources uuid="1566582e-76c0-4997-ae27-34bea92ed785">
+    <name>РегистрационныйЗнак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный знак</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ec39b89d-0854-4152-8a33-c4a2c6e239bb">
+    <name>Собственник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собственник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5c4ce3ee-1967-4ddc-bf7c-367c48ab53cd">
+    <name>АвтомобильКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автомобиль клиента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АС2_АвтомобилиКлиентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="964ae1f9-01af-4760-9270-017a356e6c5d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

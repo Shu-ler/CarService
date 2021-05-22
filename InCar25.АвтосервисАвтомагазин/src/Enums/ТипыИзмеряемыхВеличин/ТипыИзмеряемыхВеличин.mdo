@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0c666759-7c04-4e73-85ab-9edf0320d63f" extendedConfigurationObject="8e08535f-af2b-4701-a9ab-64360193f01d">
+  <producedTypes>
+    <refType typeId="5b655fa5-4810-46e7-aab7-b95def7bdbde" valueTypeId="1e31847e-6a08-447a-92fa-92980e7288e7"/>
+    <listType typeId="15062b7b-93ef-47ac-a037-dd3347ee16be" valueTypeId="bba54295-21ba-4205-8f6a-14fbba6aba51"/>
+    <managerType typeId="417a9bda-d6ca-4e2e-ac53-7c73f1e69ac9" valueTypeId="03161f49-ca1e-44ce-b08e-2c13bda2a114"/>
+  </producedTypes>
+  <name>ТипыИзмеряемыхВеличин</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+  <enumValues uuid="154cc752-4ef5-4ad8-8c58-ee3ffe4cd224" extendedConfigurationObject="654bd14d-c881-4925-beea-5643856794e3">
+    <name>Длина</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension"/>
+  </enumValues>
+</mdclass:Enum>

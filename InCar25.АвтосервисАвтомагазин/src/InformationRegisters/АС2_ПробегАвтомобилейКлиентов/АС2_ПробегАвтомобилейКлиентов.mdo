@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f500951-0f5a-4106-b88a-4ddf7f44bdf6">
+  <producedTypes>
+    <selectionType typeId="27e4ddd0-cc94-4507-b1d8-88d1bed95eff" valueTypeId="7c029475-91be-43b6-b785-cfe3e250c66b"/>
+    <listType typeId="097fe50b-1c08-40f2-b10b-0f06aca1b9a5" valueTypeId="386559e7-fe39-4582-8397-c8c8932265f4"/>
+    <managerType typeId="8e1803bc-160c-4b8d-9f88-80060f53dde4" valueTypeId="e11bd33c-1e99-4819-a514-94f7c6398e19"/>
+    <recordSetType typeId="11fa9606-1ee0-4941-901a-05cd9fa8f0c0" valueTypeId="da6ef46b-96ef-4311-8991-fa6cee41bcc5"/>
+    <recordKeyType typeId="eb956a76-d26b-4546-87e0-321913bb677a" valueTypeId="3e1c299a-cd95-45f2-80ba-68e1ca2308f5"/>
+    <recordType typeId="8970e86e-f53d-44ae-800f-54c3b081479e" valueTypeId="39cd70ab-40fd-4b14-9bb9-8761ac6df462"/>
+    <recordManagerType typeId="787fe652-d824-46db-a8c7-26d2c1b8c266" valueTypeId="ee76173f-81db-46bf-8078-2d9d1d852fbd"/>
+  </producedTypes>
+  <name>АС2_ПробегАвтомобилейКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Автосервис) Показания одометров</value>
+  </synonym>
+  <comment>Показания одометров автомобилей клиентов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АС2_ПробегАвтомобилейКлиентов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АС2_ПробегАвтомобилейКлиентов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Показание одометра</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Показания одометра</value>
+  </listPresentation>
+  <resources uuid="60b8d787-b5ae-4f9a-a525-4f5b6ae6b185">
+    <name>Пробег</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="665290ce-d169-448d-bf2f-d9f72896bcc5">
+    <name>ЕдиницаИзмеренияПробега</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <comment>Единица измерения пробега</comment>
+    <type>
+      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипИзмеряемойВеличины</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыИзмеряемыхВеличин.EnumValue.Длина</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3e59952a-917c-4f29-8923-72d4c2aeb336">
+    <name>АвтомобильКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автомобиль клиента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АС2_АвтомобилиКлиентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a8bdf46b-331a-47ff-9fbf-1f8c8cadf7b5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e2ccc81a-3934-4965-a702-1979be925075">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
