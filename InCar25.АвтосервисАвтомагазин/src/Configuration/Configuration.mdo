@@ -13,7 +13,6 @@
     <sessionModule>Extended</sessionModule>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
-    <compatibilityMode>Checked</compatibilityMode>
     <splash>Extended</splash>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="98965e65-0a53-4d26-8613-b85b252a7735"/>
@@ -25,7 +24,7 @@
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="24ff0bd0-2672-4b87-885e-dc10d1673197"/>
   <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
   <namePrefix>АС2_</namePrefix>
-  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.16</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
@@ -35,7 +34,7 @@
   <defaultLanguage>Language.Русский</defaultLanguage>
   <splash/>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.14</compatibilityMode>
+  <compatibilityMode>8.3.19</compatibilityMode>
   <languages uuid="c7f5a0ee-3186-489f-807c-90d7839da137">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -48,7 +47,6 @@
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
-  <styleItems>StyleItem.ЦветГиперссылки</styleItems>
   <commonPictures>CommonPicture.КА2_Вольво</commonPictures>
   <commonPictures>CommonPicture.ФильтрПоСвойствам</commonPictures>
   <commonPictures>CommonPicture.Номенклатура</commonPictures>
@@ -83,9 +81,9 @@
   <commonModules>CommonModule.ПодборТоваровСервер</commonModules>
   <commonModules>CommonModule.КА2_ПодключаемыеКомандыВызовСервера</commonModules>
   <commonModules>CommonModule.КА2_ПодключаемыеКомандыКлиент</commonModules>
+  <commonModules>CommonModule.КА2_КаталогАвтомобилейВызовСервера</commonModules>
   <commonModules>CommonModule.КА2_КаталогАвтомобилейКлиентСервер</commonModules>
   <commonModules>CommonModule.КА2_СлужебныеВызовСервера</commonModules>
-  <commonModules>CommonModule.КА2_КаталогАвтомобилейВызовСервера</commonModules>
   <commonModules>CommonModule.КА2_ФильтрКлиентСервер</commonModules>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.ИспользоватьНаборы</functionalOptions>
